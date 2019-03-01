@@ -2,12 +2,12 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-01 23:02:00 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-01 23:36:20
+ * @Last Modified time: 2019-03-01 23:52:02
  */
 
 const superagent = require('superagent');  //nodejs里一个非常方便的客户端请求代理模块
 const cheerio = require('cheerio'); //Node.js 版的jQuery
-const charset = require("superagent-charset");
+const charset = require("superagent-charset"); //解决superagent中文乱码问题
 charset(superagent); //设置字符
 
 const BASE_URL = 'https://www.zbjuran.com/'; // 高清美女图片大全
