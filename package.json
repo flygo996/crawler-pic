@@ -1,0 +1,19 @@
+{
+  "name": "crawler-pic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "cheerio": "^1.0.0-rc.2",
+    "superagent": "^4.1.0",
+    "superagent-charset": "^1.2.0"
+  }
+}
