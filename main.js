@@ -2,7 +2,7 @@
  * @Author: laifeipeng 
  * @Date: 2019-03-01 23:02:00 
  * @Last Modified by: laifeipeng
- * @Last Modified time: 2019-03-06 12:12:55
+ * @Last Modified time: 2019-03-06 12:13:59
  */
 const path = require('path');
 const fs = require('fs');
@@ -34,7 +34,6 @@ function downloadImg() {
     const stream = fs.createWriteStream(`./pic/${imgUrl.alt}.jpg`);
     const req = superagent.get(imgUrl.picUrl); //响应流
     req.pipe(stream);
-    console.log(`开始下载图片 https:${imgUrl.picUrl} --> ./pic/${imgUrl.picUrl}`);
   })
 }
 
